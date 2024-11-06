@@ -1,0 +1,6 @@
+{
+    "require": {
+        "symfony/validator": "^5.4",
+        "symfony/form": "^5.4"
+    }
+}

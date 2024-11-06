@@ -1,0 +1,21 @@
+{# templates/event/create.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}Crear Evento{% endblock %}
+
+{% block content %}
+<div>
+    <h1>Crear Evento</h1>
+    {{ form_start(form) }}
+    {{ form_row(form.name) }}
+    {{ form_row(form.location) }}
+    {{ form_row(form.date) }}
+    {{ form_row(form.time) }}
+    {{ form_row(form.details) }}
+    
+    <button type="submit" class="btn btn-primary">Crear Evento</button>
+    {{ form_end(form) }}
+    <a href="{{ path('event_index') }}">Volver a la lista de eventos</a>
+</div>
+{% endblock %}

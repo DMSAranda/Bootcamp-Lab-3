@@ -1,0 +1,16 @@
+{# templates/event/show.html.twig #}
+
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ event.name }}{% endblock %}
+
+{% block content %}
+    <h1>{{ event.name }}</h1>
+    <p>{{ event.location }}</p>
+    <p>{{ event.date ? event.date|date('Y-m-d') }}</p>
+    <p>{{ event.time ? event.time|date('H:i:s')}}</p>
+    <p>{{ event.details }}</p>
+
+    <a href="{{ path('event_index') }}">Volver a la lista de eventos</a>
+</div>
+{% endblock %}

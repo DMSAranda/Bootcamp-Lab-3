@@ -1,0 +1,18 @@
+index:
+   path: /
+   controller: App\Controller\EventController::index
+
+event_index:
+    path: /event
+    controller: App\Controller\EventController::index
+
+event_create:
+    path: /event/create
+    controller: App\Controller\EventController::create
+
+event_show:
+    path: /event/{id}
+    controller: App\Controller\EventController::show
+    requirements:
+        id: '\d+'
+

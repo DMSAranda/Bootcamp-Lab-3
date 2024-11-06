@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Eventos Symfony{% endblock %}</title>
+    {# Agregar enlaces a hojas de estilo CSS o archivos JavaScript aquí #}
+</head>
+<body>
+
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    
+    <footer>
+        <p>Pie de Página - Derechos de Autor © {{ 'now'|date('Y') }}</p>
+    </footer>
+</body>
+</html>
